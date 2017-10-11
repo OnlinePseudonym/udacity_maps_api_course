@@ -277,4 +277,7 @@ function searchWithinPolygon() {
             markers[i].setMap(null);
         }
     }
+    // Calculate area in square meters of polygon and display to user
+    var area = google.maps.geometry.spherical.computeArea(polygon.getPath());
+    window.alert(area + "SQUARE METERS");
 }
